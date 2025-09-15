@@ -1,9 +1,10 @@
 from hpp.corbaserver import ProblemSolver
-from hpp.environments import Buggy
 from hpp.gepetto import (
     PathPlayer,  # noqa: F401
     ViewerFactory,
 )
+
+from hpp.environments import Buggy
 
 robot = Buggy("buggy")
 robot.setJointBounds("root_joint", [-5, 16, -4.5, 4.5, -1.01, 1.01, -1.01, 1.01])
